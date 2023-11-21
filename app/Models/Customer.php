@@ -3,11 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Tymon\JWTAuth\Contracts\JWTSubject; // <-- import JWTSubject
+use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class Customer extends Authenticatable implements JWTSubject
+class Customer extends Authenticatable implements JWTSubject // <-- tambahkan ini
 {
     use HasFactory;
 

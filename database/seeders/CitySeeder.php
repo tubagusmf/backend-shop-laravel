@@ -9,11 +9,6 @@ use Illuminate\Support\Facades\Http;
 
 class CitySeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
     public function run()
     {
         //Fetch Rest API
