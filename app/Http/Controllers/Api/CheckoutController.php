@@ -14,11 +14,6 @@ class CheckoutController extends Controller
 {
     protected $request;     
  
-    /**
-     * __construct
-     *
-     * @return void
-     */
     public function __construct(Request $request)
     {
         $this->middleware('auth:api')->except('notificationHandler');
@@ -109,12 +104,6 @@ class CheckoutController extends Controller
  
     }
     
-    /**
-     * notificationHandler
-     *
-     * @param  mixed $request
-     * @return void
-     */
     public function notificationHandler(Request $request)
     {
         $payload      = $request->getContent();
